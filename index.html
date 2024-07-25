@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <script type="module">
+      import cfg from "./tailwind.config.js";
+      tailwind.config = cfg;
+    </script>
+</head>
+<body>
+    <h1 class="text-3xl font-bold underline text-clifford">
+        Hello world!
+      </h1>
+    <canvas id="cv"></canvas>
+</body>
+<script>
+    var canvas = document.getElementById("cv")
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle="#FF0000";
+    ctx.fillRect(0,0,150,75);
+</script>
+</html>
